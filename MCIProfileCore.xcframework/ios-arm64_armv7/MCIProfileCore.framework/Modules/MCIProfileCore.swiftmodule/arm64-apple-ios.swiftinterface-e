@@ -1,0 +1,20 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIProfileCore
+@_exported import MCIProfileCore
+import Swift
+import UIKit
+public protocol Profileable : AnyObject {
+  static func allocate() -> Profileable
+  func present(controller: UIKit.UIViewController, completion: (() -> Swift.Void)?)
+  func push(navigation: UIKit.UINavigationController)
+}
+public protocol PasswordCreatable : AnyObject {
+  static func allocate() -> PasswordCreatable
+  func present(uuid: Swift.String, controller: UIKit.UIViewController, completion: (() -> Swift.Void)?)
+}
+public protocol PasswordForgotable : AnyObject {
+  static func allocate() -> PasswordForgotable
+  func present(controller: UIKit.UIViewController, completion: (() -> Swift.Void)?)
+  func push(navigation: UIKit.UINavigationController)
+}

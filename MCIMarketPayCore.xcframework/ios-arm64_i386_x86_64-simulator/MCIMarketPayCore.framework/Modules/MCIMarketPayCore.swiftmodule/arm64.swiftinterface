@@ -1,0 +1,17 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIMarketPayCore
+import MCIFoundation
+@_exported import MCIMarketPayCore
+import Swift
+import UIKit
+public protocol MarketPayable {
+  func present(_ controller: UIKit.UIViewController, with: UIKit.UIImage?, transition: UIKit.UIModalTransitionStyle, completion: (() -> Swift.Void)?)
+  func voucher(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
+  func cellphoneRecharge(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
+  func tvRecharge(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
+  func api99(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
+  func webView(activeAcounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
+  func empty() -> UIKit.UIViewController
+  func isSdk()
+}
