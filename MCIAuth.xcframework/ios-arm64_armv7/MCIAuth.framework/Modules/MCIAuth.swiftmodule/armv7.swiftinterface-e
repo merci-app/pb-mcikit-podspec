@@ -1,8 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIAuth
 import Alamofire
-import Foundation
 @_exported import MCIAuth
 import MCIFoundation
 import MCIKit
@@ -26,12 +25,13 @@ extension PasswordFlowDelegate {
 extension PasswordFlowDelegate where Self : UIKit.UIViewController, Self : MCINavigationStylable, Self : MCIViewControllerProtocol {
   public func performUnwindToSplashVC()
 }
-@_inheritsConvenienceInitializers final public class PasswordFlowVC : MCIFlowViewController, Identifiable {
+@objc @_inheritsConvenienceInitializers final public class PasswordFlowVC : MCIFlowViewController, Identifiable {
   weak final public var delegate: PasswordFlowDelegate?
   final public var dismissToWallet: Swift.Bool?
   final public class func allocate() -> PasswordFlowVC
   @objc override final public func viewDidLoad()
   @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override final public func viewDidLayoutSubviews()
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)

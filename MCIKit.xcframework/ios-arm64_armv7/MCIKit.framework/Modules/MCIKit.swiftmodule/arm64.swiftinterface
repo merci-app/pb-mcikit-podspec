@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIKit
 import AVFoundation
 import CoreGraphics
@@ -29,6 +29,10 @@ public protocol MCITextFieldDelegate : UIKit.UITextFieldDelegate {
     @objc set
   }
   @objc @IBInspectable public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var titleColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
@@ -234,6 +238,7 @@ public protocol MCINavigationStylable : AnyObject {
   public func makeSolidAppearance()
   public func makeDarkAppearance()
   public func makeCustomAppearance(style: MCINavigationStyle)
+  public func apply(_ data: MCINavigationStyleData)
   @objc deinit
   @available(iOS 5.0, *)
   @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
@@ -284,6 +289,8 @@ extension NSNotification.Name {
     public static let ApplicationStarted: Foundation.Notification.Name
     public static let DeviceJailbroken: Foundation.Notification.Name
     public static let OfflineError: Foundation.Notification.Name
+    public static let ForegroundUpdate: Foundation.Notification.Name
+    public static let InternetChanged: Foundation.Notification.Name
   }
   public struct SSL {
     public static let InvalidCertificate: Foundation.Notification.Name
@@ -869,12 +876,11 @@ extension Identifiable {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers open class MCIFlowViewController : MCIViewController {
-  @objc override dynamic open func viewDidLoad()
-  @objc override dynamic open func viewDidLayoutSubviews()
-  @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+public typealias MCIFlowViewController = UIKit.UIViewController & MCIFlowViewControllerProtocol & MCINavigationStylable & MCIViewControllerProtocol
+public protocol MCIFlowViewControllerProtocol : AnyObject {
+}
+extension MCIFlowViewControllerProtocol where Self : UIKit.UIViewController {
+  public func viewLayoutSubviews()
 }
 @objc @_inheritsConvenienceInitializers final public class MCIInputOtherValueTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
   @objc override final public func awakeFromNib()
@@ -1200,7 +1206,7 @@ extension MCIPlaceTableCell {
 }
 @objc @_inheritsConvenienceInitializers final public class MCICopyButton : UIKit.UIButton, Identifiable {
   @objc override final public func didMoveToWindow()
-  final public func performCopy()
+  final public func performCopy(_ onCompletion: @escaping () -> Swift.Void = {})
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -1467,6 +1473,7 @@ extension MCICoverImageTableCell {
   @objc override final public func viewDidLoad()
   @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc override final public func viewDidLayoutSubviews()
   @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)

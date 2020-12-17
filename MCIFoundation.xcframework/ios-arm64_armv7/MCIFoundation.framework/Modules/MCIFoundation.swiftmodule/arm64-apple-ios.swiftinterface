@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIFoundation
 import AVFoundation
 import AdSupport
@@ -16,6 +16,76 @@ import MCILogger
 import MapKit
 import Swift
 import UIKit
+final public class MCIAccountPixClaim : Swift.Codable {
+  final public var claims: MCIPixClaim? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixClaim : Swift.Codable {
+  final public var confirmed: [MCIPixClaimData]? {
+    get
+  }
+  final public var pending: [MCIPixClaimData]? {
+    get
+  }
+  final public var denied: [MCIPixClaimData]? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixClaimData : Swift.Codable {
+  final public var title: Swift.String? {
+    get
+  }
+  final public var message: Swift.String? {
+    get
+  }
+  final public var subtitle: Swift.String? {
+    get
+  }
+  final public var actions: [MCIPixClaimActions]? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixClaimActions : Swift.Codable {
+  final public var text: Swift.String? {
+    get
+  }
+  final public var action: Swift.String? {
+    get
+  }
+  final public var params: MCIPixClaimActionParam? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixClaimActionParam : Swift.Codable {
+  final public var playerType: Swift.String? {
+    get
+  }
+  final public var deleteType: Swift.String? {
+    get
+  }
+  final public var claimUuid: Swift.String? {
+    get
+  }
+  final public var id: Swift.String? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
 extension NSError {
   public class func error(_ title: Swift.String, _ description: Swift.String) -> Foundation.NSError
   public class func error(code: ObjectiveC.NSInteger, title: Swift.String, description: Swift.String) -> Foundation.NSError
@@ -148,8 +218,10 @@ final public class MCIAliasBank : Swift.Codable {
   final public class func format(zipCode: Swift.String?) -> Swift.String
   final public class func format(numberId: Swift.String?) -> Swift.String
   final public class func format(cardNumber: Swift.String?) -> Swift.String
+  final public class func format(percentage: Swift.String?) -> Swift.String
   final public class func alphaNumeric(string: Swift.String?) -> Swift.String
   final public class func numeric(string: Swift.String?) -> Swift.String
+  public static let usdFormatter: Foundation.NumberFormatter
   public static let currencyFormatter: Foundation.NumberFormatter
   public static let unroundedCurrencyFormatter: Foundation.NumberFormatter
   final public class func normalize(currency: Swift.String?) -> Swift.String
@@ -396,6 +468,7 @@ public enum MCIAccountWalletActionType : Swift.String, Swift.Codable {
   case physycalCardUnblock
   case servicePortalUrl
   case plServices
+  case pix
   public static let supported: [MCIAccountWalletActionType]
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
@@ -866,6 +939,9 @@ final public class MCIAccount : Swift.Codable {
     get
   }
   final public var isSync: Swift.Bool {
+    get
+  }
+  final public var pix: MCIAccountPixClaim? {
     get
   }
   final public var pending: Swift.Bool? {
@@ -1607,6 +1683,9 @@ extension Api99Status : Swift.CustomStringConvertible, Swift.Codable {
     get
   }
 }
+extension MCIFoundation {
+  final public func requestAllBanks(completion: @escaping (Swift.Result<[MCIBank], Foundation.NSError>) -> Swift.Void)
+}
 @_hasMissingDesignatedInitializers final public class MCISecurityController {
   public static let shared: MCISecurityController
   final public func compare(password: Swift.String?) -> (equal: Swift.Bool, locked: Swift.Bool)
@@ -1726,6 +1805,26 @@ final public class MCIAccountUI : Swift.Codable {
     get
   }
   final public var address: MCIMerchantAddress? {
+    get
+  }
+  @objc deinit
+  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers final public class MCIBank : Swift.Codable {
+  final public var id: Swift.Int? {
+    get
+  }
+  final public var name: Swift.String? {
+    get
+  }
+  final public var description: Swift.String? {
+    get
+  }
+  final public var digit: Swift.String? {
+    get
+  }
+  final public var ispb: Swift.String? {
     get
   }
   @objc deinit
@@ -1881,6 +1980,8 @@ extension String {
   public static let keyPushToken: Swift.String
   public static let keyPushTokenRegistered: Swift.String
   public static let keyPayOnboardViewed: Swift.String
+  public static let keyPixOnboardViewed: Swift.String
+  public static let keyPixHomeViewed: Swift.String
 }
 extension UserDefaults {
   public func isApplicationRegistered() -> Swift.Bool
@@ -1962,6 +2063,9 @@ final public class MCIHomeSettings : Swift.Codable {
   final public var virtualCard: MCIVirtualCardSettings? {
     get
   }
+  final public var pix: MCIPixSettings? {
+    get
+  }
   @objc deinit
   public init(from decoder: Swift.Decoder) throws
   final public func encode(to encoder: Swift.Encoder) throws
@@ -2019,6 +2123,76 @@ final public class MCIQuizSettings : Swift.Codable {
 }
 final public class MCIVirtualCardSettings : Swift.Codable {
   final public var virtualCardRefreshTime: Swift.String? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixSettings : Swift.Codable {
+  final public var transfer: MCIPixTransferSettings? {
+    get
+  }
+  final public var qrCode: MCIPixQrCodeSettings? {
+    get
+  }
+  final public var home: MCIPixHomeSettings? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixTransferSettings : Swift.Codable {
+  final public var minValue: Swift.Double? {
+    get
+  }
+  final public var maxValue: Swift.Double? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixQrCodeSettings : Swift.Codable {
+  final public var minValue: Swift.Double? {
+    get
+  }
+  final public var maxValue: Swift.Double? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixHomeSettings : Swift.Codable {
+  final public var ui: MCIPixHomeUISettings? {
+    get
+  }
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+final public class MCIPixHomeUISettings : Swift.Codable {
+  final public var topCircleColor: Swift.String? {
+    get
+  }
+  final public var topTextColor: Swift.String? {
+    get
+  }
+  final public var topKeyColor: Swift.String? {
+    get
+  }
+  final public var topBackgroundColor: Swift.String? {
+    get
+  }
+  final public var centerButtonColor: Swift.String? {
+    get
+  }
+  final public var centerBackgroundColor: Swift.String? {
+    get
+  }
+  final public var bottomBackgroundColor: Swift.String? {
     get
   }
   final public func encode(to encoder: Swift.Encoder) throws
@@ -2415,13 +2589,18 @@ extension DateFormatter {
   public static let shortDayMonthYear: Foundation.DateFormatter
   public static let longDayMonthYear: Foundation.DateFormatter
   public static let brazilianDate: Foundation.DateFormatter
+  public static let pixDate: Foundation.DateFormatter
   public static let shortBrazilianDate: Foundation.DateFormatter
   public static let shortExpiration: Foundation.DateFormatter
   public static let longExpiration: Foundation.DateFormatter
   public static let brazilianDateWithTime: Foundation.DateFormatter
+  public static let fullBrazilianDateWithTime: Foundation.DateFormatter
   public static let hour: Foundation.DateFormatter
+  public static let hourMilliseconds: Foundation.DateFormatter
   public static let time: Foundation.DateFormatter
   public static let awsDate: Foundation.DateFormatter
+  public static let awsShortDate: Foundation.DateFormatter
+  public static let year: Foundation.DateFormatter
 }
 public protocol MCIAdditionalHeaderDelegate {
   func headers() -> [Swift.String : Swift.String]?

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MCILogger-Swift.h</key>
 		<data>
-		g8Ja40J/d++EwkopNtJgkpnqA1c=
+		l++7OYL9wuNlMsWDJ17gpyEBM1M=
 		</data>
 		<key>Headers/MCILogger.h</key>
 		<data>
@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ir6aeR3OzpOC6PM2bIUc118LbQo=
+		WHQYV/XwBKCTTy7w/0tkhRrN65Y=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		En37hyXYTNsP9dY/B+X6XtcIYvA=
+		GmesCgTAcSi6e6ZCDkaxaxi/xEw=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IwYNIIkHAHqNJ/wwd8X+QCry1As=
+		lh15fs5vRa+sEWHhvBWOYrminLw=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wevNS19EAYVi4E4odiojohj67vQ=
+		1OgzckqsGeWMpO+YUFEc6DzKkLg=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		En37hyXYTNsP9dY/B+X6XtcIYvA=
+		GmesCgTAcSi6e6ZCDkaxaxi/xEw=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		IwYNIIkHAHqNJ/wwd8X+QCry1As=
+		lh15fs5vRa+sEWHhvBWOYrminLw=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wevNS19EAYVi4E4odiojohj67vQ=
+		1OgzckqsGeWMpO+YUFEc6DzKkLg=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		qRrP8A4t6GaiOPrVQIwpLmk6WaA=
+		bFMteL4gw2bdGqEbAkzg9JcZnRs=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8+rJcSUSSORexSMuwi4l3iohB2U=
+		YCctiibWso+ItBUOeNKmiSyW1Gk=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zWZEJttV4bHv4rmvKYyQ+LEAnm4=
+		UpGckU63NIXHoZ6GFznVhHMrftI=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/i386.swiftdoc</key>
 		<data>
-		qRrP8A4t6GaiOPrVQIwpLmk6WaA=
+		bFMteL4gw2bdGqEbAkzg9JcZnRs=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/i386.swiftinterface</key>
 		<data>
-		8+rJcSUSSORexSMuwi4l3iohB2U=
+		YCctiibWso+ItBUOeNKmiSyW1Gk=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/i386.swiftmodule</key>
 		<data>
-		zWZEJttV4bHv4rmvKYyQ+LEAnm4=
+		UpGckU63NIXHoZ6GFznVhHMrftI=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4R6Etb590lQ4a9QoUKmBcfYbOZE=
+		uc0DJ2QTmOFk/veJ/t5Yrw5LTnE=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		a0g5UvU2sW+g2lY6WwU2O+pH/qw=
+		TnxTD5E87z0sHm0RCCIsOSQPzAo=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xXMLh9QR8j8kgMFRyotO2OsdIBc=
+		OqdKwmMHLCcmyOaIkpnZGq2lP0Q=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		4R6Etb590lQ4a9QoUKmBcfYbOZE=
+		uc0DJ2QTmOFk/veJ/t5Yrw5LTnE=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		a0g5UvU2sW+g2lY6WwU2O+pH/qw=
+		TnxTD5E87z0sHm0RCCIsOSQPzAo=
 		</data>
 		<key>Modules/MCILogger.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		xXMLh9QR8j8kgMFRyotO2OsdIBc=
+		OqdKwmMHLCcmyOaIkpnZGq2lP0Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g8Ja40J/d++EwkopNtJgkpnqA1c=
+			l++7OYL9wuNlMsWDJ17gpyEBM1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			wgm949VAyXCrFoAwsYw+cTDBSItRQos333W9KPBQ46A=
+			KvWBrTZ6Q3kVFi80pKrNSvWdyEy29qMJXjQpdUkmyA8=
 			</data>
 		</dict>
 		<key>Headers/MCILogger.h</key>
@@ -121,198 +121,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			En37hyXYTNsP9dY/B+X6XtcIYvA=
+			GmesCgTAcSi6e6ZCDkaxaxi/xEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2UVPiGAg1LupFCPnSAFa6ddjPha4hwR3NMZGhl2CWtc=
+			2ZPf/ToI6djDoCu/Fh5ghjqAmgw/XbP3GyfatUG4l9U=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IwYNIIkHAHqNJ/wwd8X+QCry1As=
+			lh15fs5vRa+sEWHhvBWOYrminLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AJAmIgQB49r7uo/khSj35sdIvuhmehz2MIpfD6itftE=
+			jgM48/w6eB0iRDKoEmSr4lCnzVh3/qhitwDb93ojM/4=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wevNS19EAYVi4E4odiojohj67vQ=
+			1OgzckqsGeWMpO+YUFEc6DzKkLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DVP9tuq5IrPbwvPbgOVOAinCwUSV/TaxqHfdTDjwMd4=
+			0d0ZzG44uvOiuwx9T2rDmhJbIOKOSaN1il3tIaKUhMY=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			En37hyXYTNsP9dY/B+X6XtcIYvA=
+			GmesCgTAcSi6e6ZCDkaxaxi/xEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2UVPiGAg1LupFCPnSAFa6ddjPha4hwR3NMZGhl2CWtc=
+			2ZPf/ToI6djDoCu/Fh5ghjqAmgw/XbP3GyfatUG4l9U=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IwYNIIkHAHqNJ/wwd8X+QCry1As=
+			lh15fs5vRa+sEWHhvBWOYrminLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AJAmIgQB49r7uo/khSj35sdIvuhmehz2MIpfD6itftE=
+			jgM48/w6eB0iRDKoEmSr4lCnzVh3/qhitwDb93ojM/4=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wevNS19EAYVi4E4odiojohj67vQ=
+			1OgzckqsGeWMpO+YUFEc6DzKkLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DVP9tuq5IrPbwvPbgOVOAinCwUSV/TaxqHfdTDjwMd4=
+			0d0ZzG44uvOiuwx9T2rDmhJbIOKOSaN1il3tIaKUhMY=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qRrP8A4t6GaiOPrVQIwpLmk6WaA=
+			bFMteL4gw2bdGqEbAkzg9JcZnRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			smwZC31MR1TdUEg88qVSjLKXlfnphCbSdUegI8Tpi9I=
+			c9277NTca+FN3iXMrFFQoFHLmle3/qGCwX/awG6ixhc=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8+rJcSUSSORexSMuwi4l3iohB2U=
+			YCctiibWso+ItBUOeNKmiSyW1Gk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6MNESIAdagKLojaR9dXlzDPdTUKVTYj/+B8Q23qmNcI=
+			Njwy17mum1zJzFSN3Hv/IVuuQLbTQBJnQzCKIGjqLKM=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zWZEJttV4bHv4rmvKYyQ+LEAnm4=
+			UpGckU63NIXHoZ6GFznVhHMrftI=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3I3lA2hjP4ckz1NHWOCxSBcSkrXkLRQ+lqJ5JmLg9E=
+			4+Yks+UuUWX+rrmn/BVK+A0FMkwhcg0NDyBR+6YnjzI=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qRrP8A4t6GaiOPrVQIwpLmk6WaA=
+			bFMteL4gw2bdGqEbAkzg9JcZnRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			smwZC31MR1TdUEg88qVSjLKXlfnphCbSdUegI8Tpi9I=
+			c9277NTca+FN3iXMrFFQoFHLmle3/qGCwX/awG6ixhc=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8+rJcSUSSORexSMuwi4l3iohB2U=
+			YCctiibWso+ItBUOeNKmiSyW1Gk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6MNESIAdagKLojaR9dXlzDPdTUKVTYj/+B8Q23qmNcI=
+			Njwy17mum1zJzFSN3Hv/IVuuQLbTQBJnQzCKIGjqLKM=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zWZEJttV4bHv4rmvKYyQ+LEAnm4=
+			UpGckU63NIXHoZ6GFznVhHMrftI=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3I3lA2hjP4ckz1NHWOCxSBcSkrXkLRQ+lqJ5JmLg9E=
+			4+Yks+UuUWX+rrmn/BVK+A0FMkwhcg0NDyBR+6YnjzI=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4R6Etb590lQ4a9QoUKmBcfYbOZE=
+			uc0DJ2QTmOFk/veJ/t5Yrw5LTnE=
 			</data>
 			<key>hash2</key>
 			<data>
-			wMyUSPjjcoo2hsuAs3AJYcu+EhbXifGo+43AcBMekgc=
+			h8rf+apvZ/szPvwbvJceIJkisngyACeAIolRZ9f1awo=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a0g5UvU2sW+g2lY6WwU2O+pH/qw=
+			TnxTD5E87z0sHm0RCCIsOSQPzAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			mUazYTdNlKB3qiJtgDh3wQ70Z4r/0n0Fpr1Gvmoz8Bo=
+			LA4WRtmYpichSaZOR1x/2/8MSsRGfVJcagoGot9TStI=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xXMLh9QR8j8kgMFRyotO2OsdIBc=
+			OqdKwmMHLCcmyOaIkpnZGq2lP0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			qUBRVfh8zmD+4YKGRBoWWFaaGamnwnJZBoItDA+IKCs=
+			moQMRpuxD6S78DFFUNuUK0A4mAWAwZaNM/fCqiekc+M=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4R6Etb590lQ4a9QoUKmBcfYbOZE=
+			uc0DJ2QTmOFk/veJ/t5Yrw5LTnE=
 			</data>
 			<key>hash2</key>
 			<data>
-			wMyUSPjjcoo2hsuAs3AJYcu+EhbXifGo+43AcBMekgc=
+			h8rf+apvZ/szPvwbvJceIJkisngyACeAIolRZ9f1awo=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a0g5UvU2sW+g2lY6WwU2O+pH/qw=
+			TnxTD5E87z0sHm0RCCIsOSQPzAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			mUazYTdNlKB3qiJtgDh3wQ70Z4r/0n0Fpr1Gvmoz8Bo=
+			LA4WRtmYpichSaZOR1x/2/8MSsRGfVJcagoGot9TStI=
 			</data>
 		</dict>
 		<key>Modules/MCILogger.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xXMLh9QR8j8kgMFRyotO2OsdIBc=
+			OqdKwmMHLCcmyOaIkpnZGq2lP0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			qUBRVfh8zmD+4YKGRBoWWFaaGamnwnJZBoItDA+IKCs=
+			moQMRpuxD6S78DFFUNuUK0A4mAWAwZaNM/fCqiekc+M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
